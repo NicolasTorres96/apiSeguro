@@ -17,7 +17,7 @@ public class SegurorestController {
 	@Autowired
 	private ISeguroService seguroService;
 	
-	@GetMapping("/seguros")
+	@GetMapping("/seguro")
 	public List<Seguro> index(){
 		return seguroService.findAll();
 	}
