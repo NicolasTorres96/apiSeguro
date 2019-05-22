@@ -16,9 +16,12 @@ public class SeguroServiceImpl implements ISeguroService{
 	private ISeguroDao seguroDao;
 	@Override
 	@Transactional(readOnly=true)
-	public List<Seguro> findAll() {
-		 
+	public List<Seguro> findAll() {		 
 		return (List<Seguro>) seguroDao.findAll();
+	}
+	@Override
+	public List<Seguro> findByTiposeguro(String tipo) {
+		return seguroDao.findByTiposeguro(tipo);
 	}
 
 }

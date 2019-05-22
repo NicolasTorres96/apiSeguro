@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-boot-ws-seguro
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Nicolás
+Implementation-Vendor-Id: com.ws.seguro
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-boot-ws-seguro
+Created-By: Maven Integration for Eclipse
+

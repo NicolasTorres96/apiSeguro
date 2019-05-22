@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -25,6 +23,9 @@ public class Seguro implements Serializable {
 	
 	@Column(name = "ESTADOVIGENCIA")
 	private int estadovigencia;
+	
+	@Column(name = "TIPOSEGURO")
+	private String tiposeguro;
 
 	public long getIdseguro() {
 		return idseguro;
@@ -56,6 +57,13 @@ public class Seguro implements Serializable {
 
 	public void setEstadovigencia(int estadovigencia) {
 		this.estadovigencia = estadovigencia;
+	}
+	public String getTiposeguro() {
+		return tiposeguro;
+	}
+
+	public void setTiposeguro(String tiposeguro) {
+		this.tiposeguro = tiposeguro;
 	}
 
 	/**
